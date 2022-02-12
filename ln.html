@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ln.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script src="ln.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+          <img src="linkedin.png" , alt=" ", height="40px"/>
+          <div class="header-search">
+            <i class="material-icons">search</i>
+            <input type="text" placeholder="Search for jobs, Companies..."/>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="headerOption">
+            <i class="material-icons">home</i>
+            <h3>Home</h3>
+          </div>
+          <div class="headerOption">
+            <i class="material-icons">people</i>
+            <h3>My Network</h3>
+          </div>
+          <div class="headerOption">
+            <i class="material-icons">work</i>
+            <h3>Jobs</h3>
+          </div>
+          <div class="headerOption">
+            <i class="material-icons">sms</i>
+            <h3>Messaging</h3>
+          </div>
+          <div class="headerOption">
+            <i class="material-icons">notifications</i>
+            <h3>Notifications</h3>
+          </div>
+          <div class="headerOption">
+            <i class="material-icons">account_circle</i>
+            <h3>Me</h3> 
+          </div>
+          <div>
+            <span class="material-icons arrow_1">arrow_drop_down</span>
+          </div>
+        </div>
+      </div>
+       <!-- ******************** -->
+       <div class="body_main">
+        <div class="sidebar">
+          <div class="sidebar_top">
+            
+            <!-- <i class="material-icons">photo_camera</i> -->
+         
+            <img src="background.png" alt=""/>
+            <div class="a_c">
+            <i class="material-icons">account_circle</i>
+            </div>
+            <div class="name">
+              <h2 id="first-name">Sarika K</h2>
+              <i class="material-icons edit_icon" data-bs-toggle="modal" data-bs-target="#exampleModal">edit</i>
+            </div>
+            <!--  -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+          </button> -->
+            <!--  -->
+            <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel" >Edit intro</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <!-- ************************** -->
+                  
+                  <div class="scroll_div">
+                    <div class="scroll_object">
+                        <div class="indicates">
+                            <p>* indicates required</p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">First name*</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Last name*</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Additional name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                        </div>
+                        <div>
+                            <p class="pronunciation">Name pronunciation</p>
+                            <p class="mobile_app">This can only be added using our mobile app</p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Headline*</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                        </div>
+        
+                        <div>
+                            <p class="current">Current position</p>
+                        </div>
+                        <div class="addition">
+                        <span class="material-icons addi_1" >add</span>
+                        <p class="add_new" data-bs-toggle="modal" data-bs-target="#secondModal" data-bs-dismiss="#exampleModal">Add new position</p>
+                        </div>
+        
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Industry*</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                        </div>
+        
+                        <div>
+                            <p class="Education">Education</p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Education*</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                        </div>
+                        <div class="addition">
+                            <span class="material-icons addi_1">add</span>
+                            <p class="add_new">Add new position</p>
+                        </div>
+        
+                        <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Show education in my intro
+                              </label>
+                            </div>
+                          </div>
+                          <div>
+                            <p class="location">Location</p>
+                          </div>
+                          <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Country/Region*</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                          </div>
+                          <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">City/District</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                          </div>
+                          <div>
+                              <p class="contact_info">Contact info</p>
+                              <p class="url">Add or edit your profile URL, email, websites and more</p>
+                          </div>
+                          <div>
+                              <p class="e_c_i">Edit contact info</p>
+                          </div>
+                    </div>
+                    </div>
+                
+                  <!-- ******************** -->
+              </div>
+              <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <button  id="submit" onClick="onBtnClick()" type="button" class="btn btn-primary">Save changes</button>
+                  <!-- <input type="submit" id="submit" onClick="onBtnClick()" value="Submit" /> -->
+              </div>
+          </div>
+           <!-- *********************add experience -->
+      <!-- Modal -->
+<div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- end***************** -->
+      </div>
+     
+  </div>
+  <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11 -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+  <!-- Optional JavaScript; choose one of the two! -->
+ 
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+            <!--  -->
+              <p class="text_1">CMR College of Engineering & Technology 
+                <span class="college">CMR College of Engineering & Technology</span></p>
+                <!-- <p class="text_2">sarika20@navgurukul.org</p> -->
+              <p class="text_3">Khammam,Telangana,India<span class="text_4">Contact info</span></p>
+              <button class="button_1">Open to</button>
+              <button class="button_2">Add section</button>
+              <button class="button_3">More</button>
+    
+              <div class="content">
+          
+                <p class="text_5"><b>show recruiters you're open to work</b> you 
+                <br>who sees this <br><span class="text_7">Get started</span>
+                <span class="material-icons ">close</span></p>
+                <div class="h_r">
+                <p class="text_6"><b>share that you're hiring </b>and attract qualified 
+                 <br>candidates <br><span class="text_8">Get started</span></p>
+                 <span class="material-icons close_2">close</span>
+                </div>
+            </div>
+           
+            <script>function onBtnClick(){
+              document.getElementById("first-name").innerHTML =
+                  document.getElementById("formGroupExampleInput").value 
+                  // " " +
+                  // document.getElementById("name-last").value; 
+          }</script>
+</body>
+</html>

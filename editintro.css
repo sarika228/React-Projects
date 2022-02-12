@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f3f2ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.edit{
+    border: 1px solid lightgrey;
+    background-color: white;
+    margin-top: 20px;
+    height: 540px;
+    width: 730px;
+    border-radius: 10px 10px 10px 10px;
+}
+.intro_left{
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.scroll_object{
+    width:650px;
+    padding-left: 30px;
+}
+.scroll_div{
+    width: 700px;
+    height: 360px;
+    padding: 10px;
+    /* background: #f1f1f1; */
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.indicates{
+    font-size: 14px;
+    color: grey;
+}
+.pronunciation{
+    color: grey;
+    font-size: 14px;
+}
+.mobile_app{
+    color:grey;
+    font-size:14px;
+}
+.current{
+    font-weight: 500;
+    font-size: 18px;
+}
+.addition{
+    display: flex;
+    color:#00008B;
+    font-weight: 500;
+}
+.addi_1:hover{
+    cursor: pointer;
+    background-color:#a8d4ff ;
+}
+.add_new:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #a8d4ff;
+}
+.Education{
+    font-weight: 500;
+    font-size: 18px;
+}
+.form-check-label{
+    color:grey;
+}
+.location{
+    font-weight: 500;
+    font-size:20px ;
+    padding-top: 20px;
+}
+.contact_info{
+    font-weight: 500;
+    font-size: 20px;
+}
+.url{
+    color:grey;
+    font-weight: 500;
+}
+.e_c_i{
+    color:#00008B ;
+    font-weight: 500;
+    font-size: 18px;
+}
+.e_c_i:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #a8d4ff;
+}
+button{
+  background-color: #0000FF;
+  justify-content:end;
+  color:white;
+  border-radius: 40px;
+  border:1px solid grey;
+  padding:5px 20px;
+  font-weight: 500;
+  margin-left: 600px;
+}
+button:hover{
+    background-color: #00008B;
+}

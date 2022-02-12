@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #f1f1f1;
+}
+.card-container{
+    width: 430px;
+    height: 610px;
+    background:linear-gradient( orange 50%, white 50%);
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 1px 10px 1px #000;
+}
+.upper-container p:nth-child(1){
+   color:#fdfeff;
+   font-weight: bold;
+   margin-left: 50px;
+   font-size: 25px;
+}
+.upper-container p:nth-child(2){
+    color:#fdfeff;
+    margin-left: 50px;
+    font-weight: 900;
+}
+.upper-container p:nth-child(3){
+    color:#fdfeff;
+    margin-left: 50px;
+    font-weight: 900;
+}
+.box{
+    width: 400px;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px(0,0,0,.3);
+}
+.box .heading{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 800;
+}
+ul li{
+    background: #f6f6f6;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+.chat-box{
+    text-align: center;
+    border: 2px solid gray;
+    color: black;
+    border-radius: 40px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .071em;
+    line-height: 19px;
+    padding: 1px 1px;
+    background-color: #fff;
+   
+}

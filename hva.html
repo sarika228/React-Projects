@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <title>Hello, world!</title>
+    <link rel=stylesheet href="hva.css"/>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+          <img src="linkedin.png" , alt=" ", height="40px"/>
+          <div class="header-search">
+            <i class="material-icons">search</i>
+            <input type="text" placeholder="Search for jobs, Companies..."/>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="headerOption">
+            <i class="material-icons">home</i>
+            <h3>Home</h3>
+          </div>
+          <div class="headerOption">
+            <i class="material-icons">people</i>
+            <h3>My Network</h3>
+          </div>
+          <div class="headerOption">
+            <i class="material-icons">work</i>
+            <h3>Jobs</h3>
+          </div>
+          <div class="headerOption">
+            <i class="material-icons">sms</i>
+            <h3>Messaging</h3>
+          </div>
+          <div class="headerOption">
+            <i class="material-icons">notifications</i>
+            <h3>Notifications</h3>
+          </div>
+          <div class="headerOption">
+            <i class="material-icons">account_circle</i>
+            <h3>Me</h3> 
+          </div>
+          <div>
+            <span class="material-icons arrow_1">arrow_drop_down</span>
+          </div>
+        </div>
+      </div>
+      <!-- *************** main body starts******************* -->
+    <div class="body_main">
+        <div class="sidebar">
+          <div class="sidebar_top">
+            <!-- <i class="material-icons">photo_camera</i> -->
+            <img src="background.png" alt=""/>
+            <div class="a_c">
+            <i class="material-icons">account_circle</i>
+            </div>
+        <div class="name">
+        <h2 id="first-name">Sarika k</h2>
+        <i class="material-icons edit_icon" data-bs-toggle="modal" data-bs-target="#exampleModal">edit</i>
+        </div>
+        <div class="college">
+        <p  class="text_1">CMR College of Engineering & Technology </p>
+        <p  class="text_2">CMR College of Engineering & Technology </p>
+        </div>
+       <p class="text_3">Khammam,Telangana,India.<span class="text_4">Contact info</span></p>
+        
+        <button class="button_1">Open to</button>
+        <button class="button_2">Add section</button>
+        <button class="button_3">More</button>
+
+      <div class="content">
+        <p class="text_5"><b>show recruiters you're open to work</b>---you <span class="material-icons close_1">
+        close</span><br>who sees this <br><span class="text_7">Get started</span></p>
+        <p class="text_6"><b>share that you're hiring </b>and attract qualified <span class="material-icons close_2">
+          close</span><br>candidates <br><span class="text_8">Get started</span></p>
+        </div>
+    </div>
+    <!-- *******************************8 -->
+    <div class="sidebar_starts">
+      <div class="s_b_d">
+      <h2>Education</h2>
+      <i class="material-icons  s_b_d" data-bs-toggle="modal" data-bs-target="#exampleModal2">add</i>
+    </div>
+    <div class="s_b_s">
+    <img src="circles.jpeg" alt="" height="60px" class="circle"/>
+    <i class="material-icons edit_button" data-bs-toggle="modal" data-bs-target="#exampleModal3">edit</i>
+    <div class="container">
+      <div class="todo" id="todo">
+
+      </div>
+    </div>  
+    </div> 
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <!-- <div class="container">
+      <div class="todo" id="todo">
+
+      </div>
+    </div>   -->
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    </div>
+    <div class="sidebar_middle">
+      <div class="s_m_l">
+      <h2>Employment</h2>
+      <i class="material-icons" data-bs-toggle="modal" data-bs-target="#exampleModal6">edit</i>
+    </div>
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <div class="employee" id="employee">
+
+    </div>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    </div>
+    <div class="sidebar-bottom">
+      <div class="s_e_e">
+     <h2>Skills & endorsements</h2>
+     <div class="s_r_m">
+      <p class="a_n_s" data-bs-toggle="modal" data-bs-target="#exampleModal5">Add a new skill</p>
+      <i class="material-icons edit_coin" data-bs-toggle="modal" data-bs-target="#exampleModal4">edit</i>
+    </div>
+    </div>
+    <!-- *********skills part -->
+    <ul id="dynamic-list">
+
+    </ul> 
+    <!-- ****************8 -->
+    </div>
+
+    
+    <!--  -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit intro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- ****************** -->
+                    <div class="scroll_div">
+                        <div class="scroll_object">
+                            <div class="indicates">
+                                <p>* indicates required</p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput" class="form-label">First name*</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Last name*</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Additional name</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <div>
+                                <p class="pronunciation">Name pronunciation</p>
+                                <p class="mobile_app">This can only be added using our mobile app</p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Headline*</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+            
+                            <div>
+                                <p class="current">Current position</p>
+                            </div>
+                            <div class="addition">
+                            <span class="material-icons addi_1">add</span>
+                            <p class="add_new">Add new position</p>
+                            </div>
+            
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Industry*</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+            
+                            <div>
+                                <p class="Education">Education</p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Education*</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <div class="addition">
+                                <span class="material-icons addi_1">add</span>
+                                <p class="add_new">Add new position</p>
+                            </div>
+            
+                            <div class="col-12">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                                  <label class="form-check-label" for="gridCheck">
+                                    Show education in my intro
+                                  </label>
+                                </div>
+                              </div>
+                              <div>
+                                <p class="location">Location</p>
+                              </div>
+                              <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Country/Region*</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                              </div>
+                              <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">City/District</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                              </div>
+                              <div>
+                                  <p class="contact_info">Contact info</p>
+                                  <p class="url">Add or edit your profile URL, email, websites and more</p>
+                              </div>
+                              <div>
+                                  <p class="e_c_i">Edit contact info</p>
+                              </div>
+                        </div>
+                        </div>
+                    <!-- *************************** -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submit" onClick="onBtnClick()">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***********Add education******** -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add education</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- ***************8 -->
+            <div class="scroll_bar">
+              <div class="b_c">
+              <div class="c_r">
+                   <p class="nk">Notify network</p>
+                   <div class="form-check_2 form-switch">
+                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                       <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                     </div>
+                   <p class="job">Turn on to notify your network. Job change updates can take up to 2 hours.
+                       <span class="e_e"><a href="https://www.linkedin.com/help/linkedin/answer/86236">Learn more</a></span>
+                   </p>
+              </div>
+              </div>
+              <div class="mb-3">
+               <label for="formGroupExampleInput" class="form-label">School*</label>
+               <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Ex:Boston University">
+             </div>
+             <div class="mb-3">
+               <label for="formGroupExampleInput" class="form-label">Degree</label>
+               <input type="text" class="form-control" id="formGroupExampleInput9" placeholder="Ex:Bachelor's">
+             </div>
+             <div class="mb-3">
+               <label for="formGroupExampleInput" class="form-label">Field of study</label>
+               <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Ex:Business">
+             </div>
+             <label for="formGroupExampleInput" class="form-label_10">start date</label>
+             <div class="labels">
+               <div>
+               <select class="form-select" aria-label="Default select example">
+                   <option selected>Month</option>
+                   <option value="1">One</option>
+                   <option value="2">Two</option>
+                   <option value="3">Three</option>
+                 </select>
+               </div>
+               <div>
+                 <select class="form-select" aria-label="Default select example">
+                   <option selected>Year</option>
+                   <option value="1">One</option>
+                   <option value="2">Two</option>
+                   <option value="3">Three</option>
+                 </select>
+               </div>
+             </div>
+             <label for="formGroupExampleInput" class="form-label_10">End date(or expected)</label>
+             <div class="labels">
+               <div>
+               <select class="form-select" aria-label="Default select example">
+                   <option selected>Month</option>
+                   <option value="1">One</option>
+                   <option value="2">Two</option>
+                   <option value="3">Three</option>
+                 </select>
+               </div>
+               <div>
+                 <select class="form-select" aria-label="Default select example">
+                   <option selected>Year</option>
+                   <option value="1">One</option>
+                   <option value="2">Two</option>
+                   <option value="3">Three</option>
+                 </select>
+               </div>
+             </div>
+             <div class="mb-3">
+               <label for="formGroupExampleInput" class="form-label">Grade</label>
+               <input type="text" class="form-control" id="formGroupExampleInput" placeholder=""> 
+             </div>
+             <div class="mb-3">
+               <label for="formGroupExampleInput" class="form-label">Activities and societies</label>
+               <div class="form-floating">
+                   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                   <label for="floatingTextarea"></label>
+                 </div>
+               </div>
+               <div class="mb-3">
+                   <label for="formGroupExampleInput" class="form-label">Description</label>
+                   <div class="form-floating">
+                       <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                       <label for="floatingTextarea"></label>
+                     </div>
+                   </div>
+                   <div>
+                       <p class="m_a">Media</p>
+                       <p class="photos">Add or link to external documents, photos, sites, videos, and presentations. 
+                           <span class="learn"><a href="https://www.linkedin.com/help/linkedin/answer/86236">Learn more</a></span></p>
+                   </div>  
+                   <div class="a_d_d">
+                       <span class="material-icons">add</span>
+                       <p>Add media</p>
+                   </div>
+               </div>
+            <!-- ********************************8 -->
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <button type="button" class="btn btn-primary" id="submit" onClick="onBtnClick(); education()" >Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *************End education********************** -->
+    <!-- **********edit education**************8 -->
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit education</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- &&&&&&&&&&& edit education*************88 -->
+        <div class="scroll_bar">
+          <div class="b_c">
+          <div class="c_r">
+               <p class="nk">Notify network</p>
+               <div class="form-check_2 form-switch">
+                   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                   <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                 </div>
+               <p class="job">Turn on to notify your network. Job change updates can take up to 2 hours.
+                   <span class="e_e"><a href="https://www.linkedin.com/help/linkedin/answer/86236">Learn more</a></span>
+               </p>
+          </div>
+          </div>
+          <div class="mb-3">
+           <label for="formGroupExampleInput" class="form-label">School*</label>
+           <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ex:Boston University">
+         </div>
+         <div class="mb-3">
+           <label for="formGroupExampleInput" class="form-label">Degree</label>
+           <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ex:Bachelor's">
+         </div>
+         <div class="mb-3">
+           <label for="formGroupExampleInput" class="form-label">Field of study</label>
+           <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ex:Business">
+         </div>
+         <label for="formGroupExampleInput" class="form-label_10">Start date</label>
+         <div class="labels">
+           <div>
+           <select class="form-select" aria-label="Default select example">
+               <option selected>Month</option>
+               <option value="1">One</option>
+               <option value="2">Two</option>
+               <option value="3">Three</option>
+             </select>
+           </div>
+           <div>
+             <select class="form-select" aria-label="Default select example">
+               <option selected>Year</option>
+               <option value="1">One</option>
+               <option value="2">Two</option>
+               <option value="3">Three</option>
+             </select>
+           </div>
+         </div>
+         <label for="formGroupExampleInput" class="form-label_10">End date(or expected)</label>
+         <div class="labels">
+           <div>
+           <select class="form-select" aria-label="Default select example">
+               <option selected>Month</option>
+               <option value="1">One</option>
+               <option value="2">Two</option>
+               <option value="3">Three</option>
+             </select>
+           </div>
+           <div>
+             <select class="form-select" aria-label="Default select example">
+               <option selected>Year</option>
+               <option value="1">One</option>
+               <option value="2">Two</option>
+               <option value="3">Three</option>
+             </select>
+           </div>
+         </div>
+         <div class="mb-3">
+           <label for="formGroupExampleInput" class="form-label">Grade</label>
+           <input type="text" class="form-control" id="formGroupExampleInput" placeholder=""> 
+         </div>
+         <div class="mb-3">
+           <label for="formGroupExampleInput" class="form-label">Activities and societies</label>
+           <div class="form-floating">
+               <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+               <label for="floatingTextarea"></label>
+             </div>
+           </div>
+           <div class="mb-3">
+               <label for="formGroupExampleInput" class="form-label">Description</label>
+               <div class="form-floating">
+                   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                   <label for="floatingTextarea"></label>
+                 </div>
+               </div>
+               <div>
+                   <p class="m_a">Media</p>
+                   <p class="photos">Add or link to external documents, photos, sites, videos, and presentations. 
+                  <span class="learn"><a href="https://www.linkedin.com/help/linkedin/answer/86236">Learn more</a></span></p>
+               </div>  
+               <div class="a_d_d">
+                   <span class="material-icons">add</span>
+                   <p>Add media</p>
+               </div>
+           </div>
+        <!-- ******************************** -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Delete education</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- ****************end edit education****************88888 -->
+    <!-- ************skills*************** -->
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reorder skills & endorsements </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Adjust endorsement settings</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- *******88end skills********** -->
+    <!-- #################add new skills############3 -->
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add skills</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1111 -->
+        <p>Suggested skills based on your profile</p>
+        <div class="o_i_ll" >
+        <span class="material-icons">add</span>
+         <p>Add another skill</p> 
+        </div>
+        <!-- *********** code for input field***********8 -->
+        <div class="input-group">
+          <input type="text" class="form-control" id="skills">
+          <div class="input-group-append">
+            <button onclick="addItem()" class="btn btn-add" type="button">Add Item</button>
+            <button onclick="removeItem()" class="btn btn-remove" type="button">Delete Item</button>
+          </div>
+        </div>
+       
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^6 -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- #############end for new skills************** -->
+    <!-- @@@@@dd experience***************** -->
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add experience</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- ***************add experience*********** -->
+        <div class="scroll_bar">
+          <div class="notify">
+              <p class="n_n">Notify network</p>
+                  <div class="form-check_1 form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  </div>
+              <p class="turn">Turn on to notify your network. Job change updates can take up to 2 hours.
+                  <span class="l_m">Learn more</span> </p>
+          </div>
+          <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Title*</label>
+              <input type="text" class="form-control"  id="form" id="formGroupExampleInput2 " placeholder="Ex:Retail Sales Manager">
+          </div>
+          <div class="e_t">
+              <label for="formGroupExampleInput2" class="form-label">Employment type</label>
+              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                  <option selected>Please select</option>
+                  <option value="1">Full-time</option>
+                  <option value="2">Part-time</option>
+                  <option value="3">Self-employed</option>
+                  <option value="4">Freelance</option>
+                  <option value="5">Internship</option>
+                  <option value="6">Trainee</option>
+              </select>
+              <label for="formGroupExampleInput2" class="form-label">Country-specific employment types</label>
+          </div>
+              <p class="l_m_1">Learn more</p>
+          <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Company name*</label>
+              <input type="text" class="form-control" id="form1" id="formGroupExampleInput2" placeholder="Ex:Microsoft"> 
+          </div>
+          <div class="mb-3"> 
+              <label for="formGroupExampleInput2" class="form-label">Location</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ex:London,United Kingdom">
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">I am currently working in this role</label>
+          </div>
+          <!-- ****************** ********************-->
+          <label for="formGroupExampleInput" class="form-label_10">Start date*</label>
+          <div class="labels">
+            <div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Month</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Year</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <label for="formGroupExampleInput" class="form-label_10">End date*</label>
+          <div class="labels">
+            <div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Month</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Year</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <!-- ****************************** -->
+          <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Headline</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder=""> 
+          </div>
+          <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Industry*</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Select an industry"> 
+              <p>LinkedIn uses industry information to provide more relevant recommendations</p>
+          </div>
+          <label for="formGroupExampleInput2" class="form-label">Description</label>
+          <div class="form-floating">
+              <!-- <label for="formGroupExampleInput2" class="form-label">Description</label> -->
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          </div>    
+          <div>
+              <p class="m_a">Media</p>
+              <p class="photos">Add or link to external documents, photos, sites, videos, and presentations. <span class="learn">Learn more</span></p>
+          </div>  
+          <div class="a_d_d">
+              <span class="material-icons">add</span>
+              <p>Add media</p>
+          </div>
+          </div>
+        <!-- ################ end ************************ -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="submit" onClick="onBtnClick(); employment()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- end experience***************** -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <script>function onBtnClick(){
+      document.getElementById("first-name").innerHTML =
+          document.getElementById("formGroupExampleInput").value 
+          // " " +
+          // document.getElementById("formGroupExampleInput").value; 
+        }
+        //for education*
+        let todo=document.getElementById("todo");
+        let name_inst=document.getElementById("formGroupExampleInput1");
+        let deg_inst=document.getElementById("formGroupExampleInput9");
+        let field_inst=document.getElementById("formGroupExampleInput3");
+        function education(){
+          var h4=document.createElement("h4");
+          var p=document.createElement("p");
+          var p2=document.createElement("p");
+          // var br=document.createElement("br");
+          h4.innerText=name_inst.value;
+          todo.appendChild(h4);
+          name_inst.value="";
+
+          p.innerText=deg_inst.value;
+          todo.appendChild(p);
+
+          p2.innerText=field_inst.value;
+          todo.appendChild(p2);
+          field_inst.value=""
+        }
+        // for employement
+        let employee=document.getElementById("employee");
+        let title=document.getElementById("form");
+        let company_name=document.getElementById("form1");
+        function employment(){
+          var h5=document.createElement("h5");
+          h5.innerText=title.value;
+          employee.appendChild(h5);
+          title.value="";
+        var p3=document.createElement("p");
+          p3.innerText=company_name.value;
+          employee.appendChild(p3);
+          company_name.value="";
+        }
+
+
+
+        // end of employement
+        // for skills
+        // ul.addEventListener('submit',(e)=>{
+        //  e.preventDefault();
+        function addItem(){
+          var ul=document.getElementById("dynamic-list");
+          var skill=document.getElementById("skills");
+          var li=document.createElement("li");
+          li.setAttribute("id",skills.value);
+          li.appendChild(document.createTextNode(skills.value));
+          ul.appendChild(li);
+          // skills.value="";
+        }
+        function removeItem(){
+          var ul=document.getElementById("dynamic-list")
+          var  skill=document.getElementById("skills");
+          var item=document.getElementById(skills.value);
+          ul.removeChild(item);
+          
+        }
+      // })
+        
+  </script>
+
+</body>
+
+</html>
